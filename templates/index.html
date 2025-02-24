@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'partials/header.html' %}
+    
+<body>
+    {% include 'partials/navbar.html' %}
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h1 class="card-title text-center"><i class="fas fa-upload"></i> Upload X-ray Image</h1>
+                        <form action="/" method="post" enctype="multipart/form-data" class="mt-3 text-center" id="uploadForm">
+                            <div class="form-group">
+                                <input type="file" name="file" class="form-control-file" style="display: block; margin-left:auto !important;">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <select name="model text-center" class="form-control">
+                                    <option value="l-bestmodel">L Best Model</option>
+                                    <option value="m-bestmodel">M Best Model</option>
+                                    <option value="n-bestmodel">N Best Model</option>
+                                    <option value="x-bestmodel">X Best Model</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-file-import"></i> Detect Scoliosis</button>
+                        </form>
+                        <!-- Loading spinner -->
+                        <div id="loadingSpinner">
+                            <div class="spinner-border text-light mb-3" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <p class="lead">Model is working to detect vertebrae...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+{% include 'partials/footer.html' %}
+
+</html>

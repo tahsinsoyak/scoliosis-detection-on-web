@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.form-control-file {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* Loading spinner style */
+
+#loadingSpinner {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#loadingSpinner .spinner-border {
+    width: 4rem;
+    height: 4rem;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.card {
+    border-radius: 0.75rem;
+}
+
+.card-title {
+    margin-bottom: 1.5rem;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    /* Prevent line breaks in table cells */
+}
+
+.links a {
+    margin-right: 10px;
+}
+
+.table th,
+.table td {
+    min-width: 150px;
+    /* Minimum width for each column */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    /* Enable horizontal scrolling on small screens */
+}
+
+.filename-cell {
+    position: relative;
+    /* Required for tooltip positioning */
+    max-width: 170px;
+    /* Adjust as needed */
+}
+
+.filename-text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+.filename-tooltip {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: normal;
+    max-width: 250px;
+    /* Adjust as needed */
+}
+
+.filename-cell:hover .filename-tooltip {
+    display: block;
+}
+
+
+/* General Navbar Styling */
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    /* Modern, clean font */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 1rem;
+    /* Increase padding for a more spacious feel */
+}
+
+.navbar-brand {
+    font-weight: 600;
+    /* Slightly bolder for the brand name */
+    font-size: 1.2rem;
+    /* Make the brand name a bit larger */
+}
+
+
+/* Navigation Links */
+
+.nav-link {
+    color: white;
+    /* Ensure text is visible on the dark background */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #ffd700;
+    /* Gold hover color (adjust as needed) */
+}
+
+
+/* Active Link Styling */
+
+.nav-item.active .nav-link {
+    color: #ffd700;
+    /* Gold color for the active link */
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background color */
+    border-radius: 0.25rem;
+    /* Rounded corners */
+}
+
+
+/* Hamburger Menu Icon */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Custom white hamburger icon */
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+        /* Center the navigation links on smaller screens */
+    }
+}

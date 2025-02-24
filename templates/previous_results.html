@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'partials/header.html' %}
+<body>
+    {% include 'partials/navbar.html' %}
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Previous Results</h1>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Filename</th>
+                                        <th>Cobb Angles</th>
+                                        <th>Curve Type</th>
+                                        <th>Images</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for result in results %}
+                                    <tr>
+                                        <td class="filename-cell">
+                                            <span class="filename-text" title="{{ result.filename }}">{{ result.filename }}</span>
+                                            <span class="filename-tooltip">{{ result.filename }}</span>
+                                        </td>
+                                        <td>{{ result.cobb_angles }}</td>
+                                        <td>{{ result.curve_type }}</td>
+                                        <td class="links">
+                                            <a href="{{ url_for('static', filename=result.bounding_boxes_img_path) }}" target="_blank">Bounding Boxes</a>
+                                            <a href="{{ url_for('static', filename=result.middle_points_img_path) }}" target="_blank">Middle Points</a>
+                                            <a href="{{ url_for('static', filename=result.cobb_angle_img_path) }}" target="_blank">Cobb Angle</a>
+                                        </td>
+                                        <td>{{ result.date }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+{% include 'partials/footer.html' %}
+
+</html>

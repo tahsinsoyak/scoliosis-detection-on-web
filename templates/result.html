@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'partials/header.html' %}
+<body>
+
+    {% include 'partials/navbar.html' %}
+
+    <div class="container mt-5">
+        <h1 class="text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="List of Cobb angles for evaluation. - It distinguishes between different spine curvature types ('S' and 'C')">Cobb Angle: {{ cobb_angle }} - {{ angle_type }}</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{{ image_path }}" class="card-img-top img-fluid" alt="Original X-ray Image" data-bs-toggle="tooltip" data-bs-placement="top" title="This image shows the original X-ray image used for the analysis." onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Original Image</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{{ bounding_boxes_img_path }}" class="card-img-top img-fluid" alt="Bounding Boxes Image" data-bs-toggle="tooltip" data-bs-placement="top" title="This image highlights the bounding boxes around the vertebrae, which are used to identify the specific areas for calculating the Cobb angle." onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bounding Boxes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{{ middle_points_img_path }}" class="card-img-top img-fluid" alt="Middle Points Image" data-bs-toggle="tooltip" data-bs-placement="top" title="This image displays the middle points of the vertebrae. These points are crucial for determining the spine's curvature and calculating the Cobb angle." onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Middle Dots</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{{ cobb_angle_img_path }}" class="card-img-top img-fluid" alt="Cobb Angle Image" data-bs-toggle="tooltip" data-bs-placement="top" title="This image shows the calculated Cobb angles between the selected vertebrae. It visually represents the curvature of the spine and helps in diagnosing scoliosis." onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cobb Angle Calculation</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="/" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="" id="modalImage" class="img-fluid" alt="Preview Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        function openModal(image) {
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = image.src;
+            var myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            myModal.show();
+        }
+    </script>
+</body>
+
+{% include 'partials/footer.html' %}
+</html>

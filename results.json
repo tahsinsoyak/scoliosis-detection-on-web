@@ -1,0 +1,184 @@
+[
+    {
+        "filename": "58.9.jpg",
+        "cobb_angles": [
+            58.73,
+            0.0,
+            30.2
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/74c0f822/58.9.jpg",
+        "bounding_boxes_img_path": "uploads/74c0f822/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/74c0f822/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/74c0f822/middle_points_cobb_angle.jpg",
+        "date": "2024-06-20 15:06:41"
+    },
+    {
+        "filename": "58.9.jpg",
+        "cobb_angles": [
+            58.73,
+            0.0,
+            30.2
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/ba30b643/58.9.jpg",
+        "bounding_boxes_img_path": "uploads/ba30b643/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/ba30b643/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/ba30b643/middle_points_cobb_angle.jpg",
+        "date": "2024-06-20 17:17:26"
+    },
+    {
+        "filename": "60.jpg",
+        "cobb_angles": [
+            48.93,
+            13.51,
+            0.0
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/20b4ca9e/60.jpg",
+        "bounding_boxes_img_path": "uploads/20b4ca9e/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/20b4ca9e/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/20b4ca9e/middle_points_cobb_angle.jpg",
+        "date": "2024-06-20 17:19:45"
+    },
+    {
+        "filename": "60.jpg",
+        "cobb_angles": [
+            48.93,
+            13.51,
+            0.0
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/d15f05ad/60.jpg",
+        "bounding_boxes_img_path": "uploads/d15f05ad/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/d15f05ad/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/d15f05ad/middle_points_cobb_angle.jpg",
+        "date": "2024-06-20 17:20:10"
+    },
+    {
+        "filename": "60.jpg",
+        "cobb_angles": [
+            40.72,
+            25.88,
+            0.0
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/ad6d40bc/60.jpg",
+        "bounding_boxes_img_path": "uploads/ad6d40bc/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/ad6d40bc/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/ad6d40bc/middle_points_cobb_angle.jpg",
+        "date": "2024-06-20 17:20:30"
+    },
+    {
+        "filename": "WhatsApp Image 2024-06-24 at 21.57.25_e20eaa2a.jpg",
+        "cobb_angles": [
+            53.12,
+            0.0,
+            18.34
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/207a776d/WhatsApp Image 2024-06-24 at 21.57.25_e20eaa2a.jpg",
+        "bounding_boxes_img_path": "uploads/207a776d/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/207a776d/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/207a776d/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 21:59:16"
+    },
+    {
+        "filename": "WhatsApp Image 2024-06-24 at 21.57.25_e20eaa2a.jpg",
+        "cobb_angles": [
+            55.01,
+            0.0,
+            23.15
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/baf6dd0f/WhatsApp Image 2024-06-24 at 21.57.25_e20eaa2a.jpg",
+        "bounding_boxes_img_path": "uploads/baf6dd0f/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/baf6dd0f/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/baf6dd0f/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 21:59:37"
+    },
+    {
+        "filename": "WhatsApp Image 2024-06-24 at 21.57.25_ffd81973.jpg",
+        "cobb_angles": [
+            47.73,
+            0.72,
+            20.79
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/1b6a176c/WhatsApp Image 2024-06-24 at 21.57.25_ffd81973.jpg",
+        "bounding_boxes_img_path": "uploads/1b6a176c/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/1b6a176c/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/1b6a176c/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 21:59:58"
+    },
+    {
+        "filename": "58.9.jpg",
+        "cobb_angles": [
+            58.73,
+            0.0,
+            30.2
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/0d1226b6/58.9.jpg",
+        "bounding_boxes_img_path": "uploads/0d1226b6/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/0d1226b6/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/0d1226b6/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 22:00:44"
+    },
+    {
+        "filename": "60.jpg",
+        "cobb_angles": [
+            48.93,
+            13.51,
+            0.0
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/c8aec44a/60.jpg",
+        "bounding_boxes_img_path": "uploads/c8aec44a/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/c8aec44a/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/c8aec44a/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 22:02:25"
+    },
+    {
+        "filename": "60.jpg",
+        "cobb_angles": [
+            46.53,
+            29.16,
+            0.0
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/22981c0d/60.jpg",
+        "bounding_boxes_img_path": "uploads/22981c0d/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/22981c0d/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/22981c0d/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 22:02:41"
+    },
+    {
+        "filename": "60.jpg",
+        "cobb_angles": [
+            40.72,
+            25.88,
+            0.0
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/1efb3e5e/60.jpg",
+        "bounding_boxes_img_path": "uploads/1efb3e5e/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/1efb3e5e/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/1efb3e5e/middle_points_cobb_angle.jpg",
+        "date": "2024-06-24 22:02:53"
+    },
+    {
+        "filename": "58.9.jpg",
+        "cobb_angles": [
+            48.37,
+            4.37,
+            20.44
+        ],
+        "curve_type": "C",
+        "image_path": "uploads/20fb3d7e/58.9.jpg",
+        "bounding_boxes_img_path": "uploads/20fb3d7e/bounding_boxes.jpg",
+        "middle_points_img_path": "uploads/20fb3d7e/middle_points.jpg",
+        "cobb_angle_img_path": "uploads/20fb3d7e/middle_points_cobb_angle.jpg",
+        "date": "2024-08-27 21:26:33"
+    }
+]
